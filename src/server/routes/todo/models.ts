@@ -9,4 +9,6 @@ export const todoModel = z.object({
 
 export type Todo = z.infer<typeof todoModel>
 
-export const getAllTodosOutputModel = z.
+export const getAllTodosOutputModel = z.object({
+    todos: z.array(todoModel)
+})
