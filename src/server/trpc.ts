@@ -1,7 +1,6 @@
-import { initTRPC } from '@trpc/server';
-import type { Context } from './context.ts';
-import type { OpenApiMeta } from 'trpc-to-openapi';
-
+import { initTRPC } from "@trpc/server";
+import type { Context } from "./context.ts";
+import type { OpenApiMeta } from "trpc-to-openapi";
 
 const t = initTRPC.context<Context>().meta<OpenApiMeta>().create();
 
